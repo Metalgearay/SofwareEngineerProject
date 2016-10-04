@@ -1,11 +1,44 @@
 <!doctype html>
-<html lang='en'>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title> Hello World
-	</title>
-	</head>
-	<body>
-	yeah
-	</body>
-	</html>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>Game List</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/gameCtrl.js"></script>
+    <script src="js/services/gameservices.js"></script>
+    <script src="js/angRoutes.js"></script>
+    <script src="js/ang.js"></script>
+</head>
+<body ng-app="sampleApp" ng-controller="GameController">
+<div class="container">
+
+    <!-- HEADER -->
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/">Stencil: Node and Angular</a>
+        </div>
+
+        <!-- LINK TO OUR PAGES. ANGULAR HANDLES THE ROUTING HERE -->
+        <ul class="nav navbar-nav">
+            <li><a href="/games">Game Add</a></li>
+        </ul>
+    </nav>
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+
+</div>
+</body>
+</html>
