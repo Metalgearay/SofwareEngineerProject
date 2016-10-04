@@ -6,6 +6,8 @@ angular.module('MainCtrl',[]).controller("MainController", function($scope,Main,
 	for(i=0;i<data["data"].length;i++)
 	{  var date = data["data"][i].date;
 		date=date.toString();
+		date = new Date(date);
+		date = date.toDateString()
 		var name = data["data"][i].name;
 		listz[name] = date;
 	
