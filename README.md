@@ -1,6 +1,6 @@
-Advanced Software Engineering Homework 2
+##Advanced Software Engineering Homework 2
 
-Practice with Development Technologies
+**Practice with Development Technologies**
 
 
 Group: Rosseforp
@@ -8,9 +8,10 @@ Group: Rosseforp
 Pair: Bretton Jervey (baj2125), Soul Raj Joshi (srj2120)
 
 
-Game List - A MEAN Stack Application for storing a wishlist of games along with their release date.
+###Game List - A MEAN Stack Application for storing a wishlist of games along with their release date.
 
-To run the application:
+**To run the application:**
+
 1. Download or Clone the git repo.
 	git clone https://github.com/Metalgearay/SofwareEngineerProject.git
 2. Navigate to the root folder of the repo.
