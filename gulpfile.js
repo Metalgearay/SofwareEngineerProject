@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     //watch = require('gulp-watch'),
     jshint = require('gulp-jshint'),
     //livereload = require('gulp-livereload'),
+    jasmine = require('gulp-jasmine'),
     paths = ['./*.js', 'app/*.js', 'app/**/*.js', 'public/js/*.js'];
 
 //nodemon
@@ -26,5 +27,11 @@ gulp.task('lint', function(){
 	.pipe(jshint.reporter('fail'));
 });
 
+//jasmine tests
+gulp.task('test', function(){
+    gulp.src('spec/test_spec.js')
+        .pipe(jasmine());
+});
+
 //default
-gulp.task('default', ['lint', 'nodemon']);
+gulp.task('default', ['lint', 'test', 'nodemon']);

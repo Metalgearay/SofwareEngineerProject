@@ -20,8 +20,12 @@ app.use(express.static(__dirname + '/public'));
 
 require('./app/routes')(app);
 
-app.listen(port);
+server = app.listen(port);
 
 console.log(" Started server on" + port);
 
 exports = module.exports = app;
+
+exports.closeServer = function(){
+    server.close();
+};
