@@ -4,8 +4,8 @@
 
     <table>
     <tr ng-repeat="(key, value) in list">
-    <td>{{value}}</td> <td> &nbsp; {{key}}</td>
-    <td><button ng-click="delete(list[key])">Delete</button>
+    <td>{{key}}</td> <td> &nbsp; {{value}}</td>
+    <td><button ng-click="delete(key)">Delete</button>
     </tr>
     </table>
 

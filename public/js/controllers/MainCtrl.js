@@ -9,7 +9,7 @@ angular.module('MainCtrl',[]).controller("MainController", function($scope,Main,
 		date = new Date(date);
 		date = date.toDateString()
 		var name = data["data"][i].name;
-		listz[date] = name;
+		listz[name] = date;
 	
 	}
 	$scope.list=listz;
