@@ -5,9 +5,10 @@ angular.module('GameService',[]).factory("Game",['$http', function($http)
 		{
 			return $http.get('/api/games');
 		},
-		create : function(gameData)
+		create : function(name,date)
 		{
-			return $http.post('/api/games',gameData);
+			var parameter = JSON.stringify({"name":name,"date":date});
+			return $http.post('/api/games',parameter);
 		},
 		delete : function(id)
 		{

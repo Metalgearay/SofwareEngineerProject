@@ -2,11 +2,11 @@ var express = require('express');
 var app = express();
 var bodyParse =require('body-parser');
 var methodOverride =require("method-override");
-
+var mongoose = require('mongoose');
 var db = require('./config/db');
 var port = 8080;
 
-//mongoose.connect(db.url);
+mongoose.connect(db.url);
 
 app.use(bodyParse.json());
 
