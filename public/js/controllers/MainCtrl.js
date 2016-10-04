@@ -6,10 +6,15 @@ angular.module('MainCtrl',[]).controller("MainController", function($scope,Main,
 	for(i=0;i<data["data"].length;i++)
 	{  var date = data["data"][i].date;
 		date=date.toString();
+		date=date.substring(0,date.indexOf('T'));
 		var name = data["data"][i].name;
-		listz[name] = date;
+		listz[date] = name;
 	
 	}
 	$scope.list=listz;
 });
+	$scope.delete = function(data)
+	{
+		Main.delete(data);
+	}
 });

@@ -25,6 +25,18 @@ module.exports = function(app) {
 		});
 		
 	});
+	app.delete('/api/games/:name',function(req,res) {
+
+		var name=req.params.name;
+		Game.remove({"name":name},function(err)
+		{
+			if (err) throw err;
+
+		});
+		 
+		
+		
+	});
 
 	app.get('*', function(req, res){
 		res.sendfile('./public/views/index.html');
