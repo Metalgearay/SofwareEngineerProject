@@ -1,1 +1,1 @@
-angular.module('GameList',['ngRoute','angRoutes','MainCtrl','GameCtrl','GameService','MainService','ngMaterial']);
+angular.module('GameList',['ngRoute','angRoutes','MainCtrl','GameCtrl','GameService','MainService','ngMaterial','angularMoment']);

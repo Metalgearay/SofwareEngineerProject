@@ -4,7 +4,7 @@ module.exports = function(app) {
 	
 	app.get('/api/games', function(req, res) {
 
-		Game.find(function(err, games) {
+		Game.find({}).sort({'date':1}).exec(function(err, games) {
 
 			if (err)
 				res.send(err);

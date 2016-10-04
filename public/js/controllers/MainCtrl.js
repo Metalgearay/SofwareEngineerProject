@@ -1,4 +1,4 @@
-angular.module('MainCtrl',[]).controller("MainController", function($scope,Main)
+angular.module('MainCtrl',[]).controller("MainController", function($scope,Main,moment)
 { var listz = {};
 	Main.get().then(function(data)
 	{
@@ -11,6 +11,5 @@ angular.module('MainCtrl',[]).controller("MainController", function($scope,Main)
 	
 	}
 	$scope.list=listz;
-	console.log(listz);
 });
 });
