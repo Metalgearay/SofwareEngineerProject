@@ -1,8 +1,7 @@
 angular.module('GameService',[]).factory("Game",['$http', function($http)
 {
-	return
-	{
-		get: function()
+	return {
+		get : function()
 		{
 			return $http.get('/api/games');
 		},
@@ -12,7 +11,7 @@ angular.module('GameService',[]).factory("Game",['$http', function($http)
 		},
 		delete : function(id)
 		{
-			returns $http.delete('/api/games' + id);
+			return $http.delete('/api/games' + id);
 		}
 	}
 
