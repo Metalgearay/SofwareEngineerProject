@@ -5,7 +5,7 @@
 
 Group: Rosseforp
 
-Pair: Bretton Jervey (baj2125), Soul Raj Joshi (srj2120)
+Pair: (baj2125), Soul Raj Joshi (srj2120)
 
 
 ###Game List - A MEAN Stack Application for storing a wishlist of games along with their release date.
